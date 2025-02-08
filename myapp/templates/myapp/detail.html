@@ -1,6 +1,18 @@
 {% extends 'myapp/base.html' %}
 
 {% block content %}
-This is detial 
+<div class="flex p-7">
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="">
+    </div>
+    <div class="pl-7">
+        <div class="text-4xl mb-3">{{product.name}}</div>
+        <div class="mb-3">{{product.description}}</div>
+        <div class="mb-3 text-green-700 font-bold">$ {{product.price}}</div>
+        <div>
+            <button id="checkout-button" class="bg-green-500 text-white px-4 py-2 rounded-sm">Buy</button>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}
